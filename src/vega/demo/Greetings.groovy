@@ -36,7 +36,7 @@ class Greetings implements Serializable {
     }
     
     
-    def sayGoodBye() {
+    def sayGoodbye() {
         def greeting = goodbye(this.lang)
         this.cmd.echo "${greeting} ${this.name}"
     }  
