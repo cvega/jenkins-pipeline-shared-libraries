@@ -33,7 +33,7 @@ class Greetings implements Serializable {
             case "hindi": return "नमस्ते"; break;
             case "japanese": return "こんにちは"; break;
             case "spanish": return "Hola"; break;
-            default: return "Welcome"
+            default: return "Welcome";
         }
     }
     
@@ -45,7 +45,7 @@ class Greetings implements Serializable {
             case "hindi": return "अलविदा"; break;
             case "japanese": return "さようなら"; break;
             case "spanish": return "Adiós"; break;
-            default: return "Godspeed"
+            default: return "Godspeed";
         }
     }
 }
