@@ -5,7 +5,7 @@ class Greetings implements Serializable {
     def cmd, lang, name
 
 
-    Greetings(Object cmd, String lang, String name) {
+    Greetings(cmd, String lang, String name) {
         this.cmd  = cmd
         this.lang = lang
         this.name = name ?: 'Jenkins User'
