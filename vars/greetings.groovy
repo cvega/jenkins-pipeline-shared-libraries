@@ -6,5 +6,4 @@ def call(String lang, String name) {
   
   greetings.sayHello()
   greetings.sayGoodbye()
-  return 0
 }
