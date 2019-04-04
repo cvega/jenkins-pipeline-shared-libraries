@@ -1,10 +1,10 @@
 package vega.demo
 
 
-class Greetings implements Serializable {
+class Greeting implements Serializable {
     private def cmd, lang, name
 
-    Greetings(Object cmd, String lang, String name) {
+    Greeting(Object cmd, String lang, String name) {
         this.cmd  = cmd
         this.lang = lang
         this.name = name ?: 'Jenkins User'
