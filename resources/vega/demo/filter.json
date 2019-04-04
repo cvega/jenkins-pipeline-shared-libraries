@@ -1,6 +1,6 @@
 {
-  keywords: {
-    security: [
+  "keywords": {
+    "security": [
       "credentials",
       "password"
     ]
