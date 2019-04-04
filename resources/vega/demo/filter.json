@@ -2,7 +2,8 @@
   "keywords": {
     "security": [
       "credentials",
-      "password"
+      "password",
+      "secret"
     ]
   }
 }
