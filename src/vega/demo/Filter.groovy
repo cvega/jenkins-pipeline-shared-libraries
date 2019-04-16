@@ -33,7 +33,7 @@ class Filter implements Serializable {
         }
     }
 
-    def private profanity(String jenkinsfile) {
+    def private profanity() {
         if ( this.jenkinsfile ==~ /(?s).*fightclub.*/) {
             scrub("profanity")
         }
