@@ -10,12 +10,12 @@ class Filter implements Serializable {
     }
 
 
-    def public security-regex() {
+    def security-regex() {
         security()
     }
 
 
-    def public profanity-regex() {
+    def profanity-regex() {
         profanity()
     }
 
