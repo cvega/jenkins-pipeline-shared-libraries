@@ -4,7 +4,7 @@ package vega.demo
 class Filter implements Serializable {
     private def cmd, jenkinsfile
 
-    Greeting(Object cmd, String jenkinsfile) {
+    Filter(Object cmd, String jenkinsfile) {
         this.cmd  = cmd
         this.jenkinsfile = jenkinsfile
     }
