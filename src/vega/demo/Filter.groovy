@@ -19,7 +19,7 @@ class Filter implements Serializable {
         profanity()
     }
 
-    @NonCPS
+    
     def private scrub(String alert) {
         this.cmd.echo "${alert} alert!"
         this.cmd.currentBuild.result = 'ABORT'
