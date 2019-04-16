@@ -1,14 +1,23 @@
 import vega.demo.Filter
 
 
+def abort() {
+  return currentbuild.result = 'ABORT'
+}
+
+
 def call(String jenkinsfile, String type) {
-    def filter = new Filter(this, jenkinsfile);
+  def filter = new Filter(this, jenkinsfile);
   
   if (type == "security") {
-    filter.securityRegexp()
+    if (filter.securityRegexp()) {
+      abort()
+    }
   }
   else if (type == "profanity") {
-    filter.profanityRegexp()
+    if (filter.profanityRegexp()) {
+      abort()
+    }
   }
   else {
     echo "*** INVALID FILTER NAME ***"
