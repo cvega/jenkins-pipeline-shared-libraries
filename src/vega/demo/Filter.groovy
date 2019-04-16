@@ -21,19 +21,19 @@ class Filter implements Serializable {
 
     
     def private scrub(String alert) {
-        this.cmd.echo "${alert} alert!"
-        this.cmd.currentBuild.result = 'ABORT'
+        cmd.echo "${alert} alert!"
+        cmd.currentBuild.result = 'A
     }
 
 
     def private security() {
-        if ( this.jenkinsfile ==~ /(?s).*credentials.*/) {
+        if ( jenkinsfile ==~ /(?s).*credentials.*/) {
             scrub("secruity")
         }
     }
 
     def private profanity() {
-        if ( this.jenkinsfile ==~ /(?s).*fightclub.*/) {
+        if ( jenkinsfile ==~ /(?s).*fightclub.*/) {
             scrub("profanity")
         }
     }
