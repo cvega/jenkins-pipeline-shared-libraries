@@ -15,7 +15,7 @@ class Filter implements Serializable {
     }
 
 
-    def profanityRegex() {
+    def profanityRegexp() {
         profanity()
     }
 
