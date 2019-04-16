@@ -6,12 +6,12 @@ def call(String jenkinsfile, String type) {
   
   if (type == "security") {
     if (filter.securityRegexp()) {
-      currentbuild.result = 'ABORT'
+      currentBuild.result = 'ABORT'
     }
   }
   else if (type == "profanity") {
     if (filter.profanityRegexp()) {
-      currentbuild.result = 'ABORT'
+      currentBuild.result = 'ABORT'
     }
   }
   else {
