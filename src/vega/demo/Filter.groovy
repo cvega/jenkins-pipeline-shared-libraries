@@ -22,7 +22,7 @@ class Filter implements Serializable {
 
     def private scrub(String alert) {
         this.cmd.echo "${alert} alert!"
-        this.cmd.currentBuild.result = 'FAILURE'
+        this.cmd.currentBuild.currentResult = 'FAILURE'
         return 1
     }
 
