@@ -7,7 +7,7 @@ def call(String jenkinsfile, String type) {
   if (type == "security") {
     filter.security()
   }
-  elif (type == "profanity") {
+  else if (type == "profanity") {
     filter.profanity()
   }
   else {
