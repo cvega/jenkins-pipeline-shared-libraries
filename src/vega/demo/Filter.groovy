@@ -5,7 +5,7 @@ class Filter implements Serializable {
     private def cmd, jenkinsfile
 
     Filter(Object cmd, String jenkinsfile) {
-        this.cmd  = cmd
+        this.cmd = cmd
         this.jenkinsfile = jenkinsfile
     }
 
@@ -30,14 +30,12 @@ class Filter implements Serializable {
     def private security() {
         if ( this.jenkinsfile ==~ /(?s).*credentials.*/) {
             scrub("secruity")
-            return
         }
     }
 
     def private profanity(String jenkinsfile) {
         if ( this.jenkinsfile ==~ /(?s).*fightclub.*/) {
             scrub("profanity")
-            return
         }
     }
 }
