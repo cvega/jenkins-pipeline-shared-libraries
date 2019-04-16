@@ -22,7 +22,7 @@ class Filter implements Serializable {
     @NonCPS
     def private scrub(String alert) {
         this.cmd.echo "${alert} alert!"
-        cmd.currentBuild.result = 'ABORT'
+        this.cmd.currentBuild.result = 'ABORT'
     }
 
 
