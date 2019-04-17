@@ -8,7 +8,7 @@ def call(String jenkinsfile) {
   screen.each {
     println "here i am"
     println "$it"
-    if (it) {
+    if (!it) {
       println "here to"
       currentBuild.result = 'ABORT'
       error()
