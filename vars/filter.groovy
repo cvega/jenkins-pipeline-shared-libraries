@@ -14,5 +14,5 @@ def screen(Boolean... filter) {
 
 def call(String jenkinsfile) {
   def filter = new Filter(this, jenkinsfile)
-  screen([filter.security(), filter.profanity()])
+  this.screen([filter.security(), filter.profanity()])
 }
