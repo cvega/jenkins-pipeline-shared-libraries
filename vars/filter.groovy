@@ -1,7 +1,7 @@
 import vega.demo.Filter
 
 
-def call(String jenkinsfile, String type) {
+def call(String jenkinsfile) {
   def filter = new Filter(this, jenkinsfile);
   
   if (type == "security") {
