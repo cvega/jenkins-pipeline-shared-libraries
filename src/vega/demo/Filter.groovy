@@ -4,6 +4,7 @@ package vega.demo
 class Filter implements Serializable {
     private def cmd, jenkinsfile
 
+        
     Filter(Object cmd, String jenkinsfile) {
         this.cmd = cmd
         this.jenkinsfile = jenkinsfile
@@ -21,7 +22,7 @@ class Filter implements Serializable {
 
     
     def private scrub(String alert) {
-        cmd.echo "${alert} alert!"
+        cmd.echo "*** ${alert} filter alert! ***"
         return 'FAILURE'
     }
 
@@ -32,6 +33,7 @@ class Filter implements Serializable {
         }
     }
 
+    
     def private profanity() {
         if ( jenkinsfile ==~ /(?s).*fightclub.*/) {
             scrub("profanity")
