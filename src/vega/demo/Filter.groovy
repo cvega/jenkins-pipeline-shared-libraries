@@ -11,13 +11,13 @@ class Filter implements Serializable {
     }
 
 
-    def securityRegexp() {
-        security()
+    def security() {
+        securityRegexp()
     }
 
 
-    def profanityRegexp() {
-        profanity()
+    def profanity() {
+        profanityRegexp()
     }
 
     
@@ -27,14 +27,14 @@ class Filter implements Serializable {
     }
 
 
-    def private security() {
+    def private securityRegexp() {
         if ( jenkinsfile ==~ /(?s).*credentials.*/) {
             scrub("security")
         }
     }
 
     
-    def private profanity() {
+    def private profanityRegexp() {
         if ( jenkinsfile ==~ /(?s).*fightclub.*/) {
             scrub("profanity")
         }
