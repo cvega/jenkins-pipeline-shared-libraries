@@ -9,7 +9,8 @@ def call(String jenkinsfile) {
     if (it) {
       currentBuild.result = 'ABORT'
       error()
-      return
     }
   }
+  
+  return
 }
