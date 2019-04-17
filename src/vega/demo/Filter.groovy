@@ -29,7 +29,7 @@ class Filter implements Serializable {
 
     def private security() {
         if ( jenkinsfile ==~ /(?s).*credentials.*/) {
-            scrub("secruity")
+            scrub("security")
         }
     }
 
