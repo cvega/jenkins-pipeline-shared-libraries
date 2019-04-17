@@ -17,4 +17,5 @@ def call(String jenkinsfile, String type) {
   else {
     echo "*** INVALID FILTER NAME ***"
   }
+  return
 }
