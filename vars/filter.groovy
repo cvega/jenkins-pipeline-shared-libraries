@@ -6,7 +6,7 @@ def call(String jenkinsfile) {
   def screen = [filter.security(), filter.profanity()]
   
   screen.each {
-    if ($it) {
+    if (it) {
       currentBuild.result = 'ABORT'
       error()
       return
