@@ -6,7 +6,10 @@ def call(String jenkinsfile) {
   def screen = [filter.security(), filter.profanity()]
   
   screen.each {
+    println "here i am"
+    println "$it"
     if (it) {
+      println "here to"
       currentBuild.result = 'ABORT'
       error()
     }
